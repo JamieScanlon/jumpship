@@ -22,22 +22,7 @@ An MVC Based ActionScript with the following features:
 
 == Download ==
 
-You can download the latest release version here:
-
-=== JumpShip for AS3 ===
-
-For the JumpShip Framework's core class files:
-
-[http://www.youbits.com/jumpship/JumpShip_3.2.zip ZIP - JumpShip Core]
- 
-
-=== JumpShip for AS2 ===
-
-For the JumpShip Framework:
-
-[http://www.youbits.com/jumpship/JumpShip_v.1.5.zip ZIP - JumpShip Complete]
-
-(Note: JumpShip Extras have been depreciated in the AS3 version)
+You can download a zip containing the full framework and ASDoc generated documentation in the downloads section
 
 == Latest News ==
 
