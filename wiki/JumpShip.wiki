@@ -67,7 +67,7 @@ For the JumpShip Framework:
 
 == Usage instructions ==
 
-Visit the [[projects:jumpship:documentation|JumpShip Docs]] page for the basics.
+Visit the JumpShipDocs page for the basics.
 
 See "documentation" folder within the package for the class specifications.
 
