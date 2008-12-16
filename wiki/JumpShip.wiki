@@ -12,19 +12,13 @@ An MVC Based ActionScript with the following features:
 === JumpShip Framework Blog: ===
 [http://jumpshipframework.blogspot.com/ jumpshipframework.blogspot.com].
 
-== Specification ==
-
-  * **Category:** ActionScript Framework
-  * **Audience:** Developers
-  * **Platform:** Cross-platform
-  * **Maturity:** Final 3.2
-  * **License:** MIT
-
 == Download ==
 
 You can download a zip containing the full framework and ASDoc generated documentation in the downloads section
 
 == Latest News ==
+
+  * 12/16/08: JumpShip UPDATE, version 4.0. This update coincides with moving the project to google code. This update focuses on eliminating dependancies on the Singleton pattern. Also included are added features for the state and data model classes as well as fixes for potential memory leaks.
 
   * 05/16/08: JumpShip for AS3 UPDATE, version 3.2. See Downloads.
 
@@ -108,21 +102,6 @@ The JumpShip Framework also has basic Application State Model , Application Envi
 The Application Environment tracks whether the current build is a development version ( which may sacrifice performance and reliability at the cost of more bug reporting ) or a production environment ( which probably is most concerned with performance and graceful application errors ). You can use this class to have your application behave differently depending on in which environment it is running.
 
 The Service Locator provides basic abstraction between your Flash Application and your data gateway be it Flash Remoting, Flash Media Server or [http://rubyonrails.org Ruby on Rails].
-== Project Schedule ==
-
-* **Status - Complete.** 05/16/08: Release JumpShip Framework version 3.2. This new version fixes a few minor bugs.
-
-  * **Status - Complete.** 03/2/08: Release JumpShip Framework version 3.0. This new version is greatly simplified and easier to get up and running (see the [http://jumpshipframework.blogspot.com/ JumpShip Blog] for more info ). The Ruby on Rails Gateway is also refactored and simplified from the ground up to support RESTful development.
-
-  * **Status - Complete.** 01/02/08: A Core / Rails Library Update. Major updates to JSDataModel and an introduction of a new core library Class, JSEnumerable. Also a conceptual change to JSApplicationState, making it a JSDataRecord so it behaves like an ordinary data object.There are also  a few bug fixes and, improvements to make it more Flex Builder friendly.
-
-  * **Status - Complete.** 09/1/07: Port a version of the JumpShip Framework over to ActionScript 3.0.
-
-  * **Status - Complete.** 04/29/07: Target Final version release date with a Ruby on Rails Gateway, improved Model sort options, improved DataProvider API support and improved documentation.
-
-  * **Status - Complete.** 12/31/06: Add JumpShip Framework Core code examples.
-
-  * **Status - Complete.** 12/10/06: Release first public beta of JumpShip Framework Core and JumpShip Framework Extras
 
 == Credits ==
 
