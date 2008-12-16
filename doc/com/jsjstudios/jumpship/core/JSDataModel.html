@@ -1,0 +1,1778 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
+<meta content="JSDataModel,com.jsjstudios.jumpship.core.JSDataModel,IDCOUNTER,itemsList,titlesList,columnNames,hasMany,hasOne,items,length,modelName,records,addColumn,addColumnAt,addItem,addItemAt,dataRecordBindingEvent,doEach,doSort,editField,find,getColumn,getColumnAt,getItemAt,getItemID,getItemIndex,remove,removeAll,removeColumn,removeColumnAt,removeItemAt,replaceItemAt,setItemAt,sortCompare,sortItems,sortItemsBy,toArray,toObject,toString,toXML,update,updateAll,updateColumn" name="keywords">
+<title>com.jsjstudios.jumpship.core.JSDataModel</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'JSDataModel - API Documentation';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?com/jsjstudios/jumpship/core/JSDataModel.html&amp;com/jsjstudios/jumpship/core/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;JSDataModel</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class JSDataModel"); titleBar_setSubNav(false,true,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.jsjstudios.jumpship.core</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class JSDataModel</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">JSDataModel <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../images/inherit-arrow.gif"> <a href="JSEnumerable.html">JSEnumerable</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../images/inherit-arrow.gif"> flash.utils.Proxy</td>
+</tr>
+</table>
+<p></p>
+ Data Model Class.
+ Inheritance JSDataModel -> EventDispatcher -> Object
+ Takes two parameters in the constructor. new JSDataModel ( theNames:Array = null , theItems:Array = null )
+ theNames is an array of colum names, theItems is the name-value pairs to populate the JSDataModel with.
+ <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<div class="showHideLinks">
+<div class="hideInheritedProperty" id="hideInheritedProperty">
+<a onclick="javascript:setInheritedVisible(false,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Properties</a>
+</div>
+<div class="showInheritedProperty" id="showInheritedProperty">
+<a onclick="javascript:setInheritedVisible(true,'Property');" href="#propertySummary" class="showHideLink"><img src="../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Properties</a>
+</div>
+</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#columnNames">columnNames</a> : Array<div class="summaryTableDescription">
+   An array containing the names of the columns in this Model
+   </div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="JSEnumerable.html#entries">entries</a> : Function<div class="summaryTableDescription"> 
+   An alias for the toArray method
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasMany">hasMany</a> : Array<div class="summaryTableDescription">
+   An array referencing other Models that this Model has a "has many" relationship
+   to.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#hasOne">hasOne</a> : Array<div class="summaryTableDescription">
+   An array referencing other Models that this Model has a "has one" relationship
+   to.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#items">items</a> : Array<div class="summaryTableDescription">[read-only]
+   (Read Only) An array of all record items in this Model.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#length">length</a> : int<div class="summaryTableDescription">[read-only]
+   (Read Only) The number of record items in this Model
+   </div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="JSEnumerable.html#map">map</a> : Function<div class="summaryTableDescription"> 
+   An alias for the collect method
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="JSEnumerable.html#member">member</a> : Function<div class="summaryTableDescription"> 
+   An alias for the incl method
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#modelName">modelName</a> : String<div class="summaryTableDescription">
+   A String defining the name of this model.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#records">records</a> : Array<div class="summaryTableDescription">[read-only]
+   (Read Only) An array of all record items in this Model.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="hideInheritedProperty">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol"><a class="signatureLink" href="JSEnumerable.html#select">select</a> : Function<div class="summaryTableDescription"> 
+   An alias for the findAll method
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#IDCOUNTER">IDCOUNTER</a> : uint = 0<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#itemsList">itemsList</a> : Array<div class="summaryTableDescription">
+   An Array which stores the list of JSDataRecord instances.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#titlesList">titlesList</a> : Array<div class="summaryTableDescription">
+   An Array which stores the list of titles or column names.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedMethod" id="hideInheritedMethod">
+<a onclick="javascript:setInheritedVisible(false,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Public Methods</a>
+</div>
+<div class="showInheritedMethod" id="showInheritedMethod">
+<a onclick="javascript:setInheritedVisible(true,'Method');" href="#methodSummary" class="showHideLink"><img src="../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Public Methods</a>
+</div>
+</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#JSDataModel()">JSDataModel</a>(theNames:Array = null, theItems:Array = null)</div>
+<div class="summaryTableDescription">
+   Constructor.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addColumn()">addColumn</a>(theName:String, theValues:Object):void</div>
+<div class="summaryTableDescription">
+   Adds a column to the Model
+   </div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addColumnAt()">addColumnAt</a>(theName:String, theIndex:int, theValues:Object):void</div>
+<div class="summaryTableDescription">
+   Adds a column to the Model at a specific location
+   </div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#addEventListener()">addEventListener</a>(type:String, listener:Function, useCapture:Boolean = false, priority:int = 0, useWeakReference:Boolean = false):void</div>
+<div class="summaryTableDescription">
+   IEventDispatcher addEventListener implementation
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addItem()">addItem</a>(theItem:<a href="JSDataRecord.html">JSDataRecord</a>):void</div>
+<div class="summaryTableDescription">
+   Adds a new record item to the Model.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addItemAt()">addItemAt</a>(theIndex:int, theItem:<a href="JSDataRecord.html">JSDataRecord</a>):void</div>
+<div class="summaryTableDescription">
+   Adds a new record item to the Model at a specified index.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#all()">all</a>(iterator:Function):*</div>
+<div class="summaryTableDescription"> 
+   A method that calls a function iteratively with each item in the data set 
+   and returns true when the result of the function is true for all items
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#any()">any</a>(iterator:Function):*</div>
+<div class="summaryTableDescription"> 
+   A method that calls a function iteratively with each item in the data set 
+   and returns true when the result of the function is true for any items
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#collect()">collect</a>(iterator:Function = null):*</div>
+<div class="summaryTableDescription"> 
+   A method that calls a function for each item in the data set and puts 
+   the result into an array
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#detect()">detect</a>(iterator:Function):*</div>
+<div class="summaryTableDescription"> 
+   A method that calls a function iteratively with each item in the data set 
+   and returns the item when the result of the function is true for any item
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#dispatchEvent()">dispatchEvent</a>(event:Event):Boolean</div>
+<div class="summaryTableDescription">
+   IEventDispatcher dispatchEvent implementation
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#each()">each</a>(iterator:Function):*</div>
+<div class="summaryTableDescription"> 
+   A method that calls a function for each item in the data set
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#eachSlice()">eachSlice</a>(num:uint, iterator:Function):*</div>
+<div class="summaryTableDescription"> 
+   A method that calls the <code>map</code> method on an array
+   using the <code>iterator</code> function on slices
+   of the data set each with a size given by <code>num</code>
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#editField()">editField</a>(theIndex:int, theFieldName:String, newData:*):void</div>
+<div class="summaryTableDescription">
+   Updates an attribute of a record item at the specified index.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#find()">find</a>(theMethod:String, theConditions:Object = null, theOptions:Object = null):*</div>
+<div class="summaryTableDescription">
+   Serch and sort method for record items.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#findAll()">findAll</a>(iterator:Function):*</div>
+<div class="summaryTableDescription"> 
+   A method that calls a function iteratively with each item in the data set 
+   and returns an array of items for which the result of the function is true
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getColumn()">getColumn</a>(theName:String):Object</div>
+<div class="summaryTableDescription">
+   Returns the values of a column in the form of an object.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getColumnAt()">getColumnAt</a>(theIndex:int):Object</div>
+<div class="summaryTableDescription">
+   Returns the values of a column in the form of an object.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getItemAt()">getItemAt</a>(theIndex:int, ... args):*</div>
+<div class="summaryTableDescription">
+   Returns the data record at a given index.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getItemID()">getItemID</a>(theIndex:int):Object</div>
+<div class="summaryTableDescription">
+   Returns the data record id at a given index.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getItemIndex()">getItemIndex</a>(theID:Object):int</div>
+<div class="summaryTableDescription">
+   Returns the data record index at a given id.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#grep()">grep</a>(pattern:RegExp, iterator:Function):*</div>
+<div class="summaryTableDescription"> 
+   A method that calls a toString iteratively with each item in the data set 
+   and returns an array of values returned from the iterator where result of the RegExp is true
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#hasEventListener()">hasEventListener</a>(type:String):Boolean</div>
+<div class="summaryTableDescription">
+   IEventDispatcher hasEventListener implementation
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#incl()">incl</a>(object:*):*</div>
+<div class="summaryTableDescription"> 
+   A method that iteratively compares each item in the data set with an object
+   and returns true if any item matches the object.</div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#inject()">inject</a>(memo:*, iterator:Function):*</div>
+<div class="summaryTableDescription"> 
+   A method that iteratively passes an object into an iterator function for
+   eash item in the data set and uses the returned value to pass into the next
+   item.</div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#invoke()">invoke</a>(method:*, ... args):*</div>
+<div class="summaryTableDescription"> 
+   Iteratively calls a method for each item in the data set
+    and returns an array of results.</div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#max()">max</a>(iterator:Function):*</div>
+<div class="summaryTableDescription"> 
+   Iteratively calls an iterator function for each item in the data set
+    and returns the largest result.</div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#min()">min</a>(iterator:Function):*</div>
+<div class="summaryTableDescription"> 
+   Iteratively calls an iterator function for each item in the data set
+    and returns the smallest result.</div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#pluck()">pluck</a>(property:String):*</div>
+<div class="summaryTableDescription"> 
+   Iteratively takes a proterty from each item in the data set
+    and returns an array of the results.</div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#reject()">reject</a>(iterator:Function):*</div>
+<div class="summaryTableDescription"> 
+   Calls a function iteratively for eac item in the data set and returns
+   an array of items for which the result of the functino was false.</div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#remove()">remove</a>(theIndex:int):void</div>
+<div class="summaryTableDescription">
+   Removes a record item at the specified index.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeAll()">removeAll</a>():void</div>
+<div class="summaryTableDescription">
+   Removes all record items from the Model.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeColumn()">removeColumn</a>(theName:String):void</div>
+<div class="summaryTableDescription">
+    Removes a column.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeColumnAt()">removeColumnAt</a>(theIndex:int):void</div>
+<div class="summaryTableDescription">
+   Removes a column at the specified index.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#removeEventListener()">removeEventListener</a>(type:String, listener:Function, useCapture:Boolean = false):void</div>
+<div class="summaryTableDescription">
+   IEventDispatcher removeEventListener implementation
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeItemAt()">removeItemAt</a>(theIndex:int):void</div>
+<div class="summaryTableDescription">
+   Alias for the remove() method.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#replaceItemAt()">replaceItemAt</a>(theIndex:int, theItem:<a href="JSDataRecord.html">JSDataRecord</a>):void</div>
+<div class="summaryTableDescription">
+   Replaces a record item at the specified index.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setItemAt()">setItemAt</a>(theValue:Object, theIndex:int, ... args):*</div>
+<div class="summaryTableDescription">
+   Sets the data record at a given index.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#size()">size</a>():int</div>
+<div class="summaryTableDescription"> 
+   Returns the size of the data set by first converting t to and array
+   and then taking the length.</div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#sortBy()">sortBy</a>(iterator:Function):*</div>
+<div class="summaryTableDescription"> 
+   Builds a new array with all the items in the data set sorted according
+   to the result of a function called on each item
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#sortItems()">sortItems</a>(theCompareFunc:Function = null):void</div>
+<div class="summaryTableDescription">
+   Sorts the Records in this model and changes the id's accordingly.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#sortItemsBy()">sortItemsBy</a>(fieldName:String):void</div>
+<div class="summaryTableDescription">
+   Sorts the Records in this model according to a column and changes the id's accordingly.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toArray()">toArray</a>():Array</div>
+<div class="summaryTableDescription">
+   Returns an Array representation of this object with object representations of the JSDataRecord as values.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toObject()">toObject</a>():Object</div>
+<div class="summaryTableDescription">
+   Returns an Object representation of this object with the JSDataRecord id's as attribute names and 
+   object representations of the JSDataRecord as values.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():String</div>
+<div class="summaryTableDescription">
+   Returns the a String description of this model.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toXML()">toXML</a>():XML</div>
+<div class="summaryTableDescription">
+   Returns the contents of this model in XML form.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#update()">update</a>(theIndex:int, theAttributes:Object):void</div>
+<div class="summaryTableDescription">
+   Updates a record item at the specified index.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#updateAll()">updateAll</a>(theAttributes:Object, theConditions:Object):void</div>
+<div class="summaryTableDescription">
+   Updates all record items.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#updateColumn()">updateColumn</a>(theName:String, theValues:Object):void</div>
+<div class="summaryTableDescription">
+   Updates a column with the values provided.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="hideInheritedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#willTrigger()">willTrigger</a>(type:String):Boolean</div>
+<div class="summaryTableDescription">
+   IEventDispatcher willTrigger implementation
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+</table>
+</div>
+<a name="protectedMethodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Methods</div>
+<div class="showHideLinks">
+<div class="hideInheritedProtectedMethod" id="hideInheritedProtectedMethod">
+<a onclick="javascript:setInheritedVisible(false,'ProtectedMethod');" href="#protectedMethodSummary" class="showHideLink"><img src="../../../../images/expanded.gif" class="showHideLinkImage"> Hide Inherited Protected Methods</a>
+</div>
+<div class="showInheritedProtectedMethod" id="showInheritedProtectedMethod">
+<a onclick="javascript:setInheritedVisible(true,'ProtectedMethod');" href="#protectedMethodSummary" class="showHideLink"><img src="../../../../images/collapsed.gif" class="showHideLinkImage"> Show Inherited Protected Methods</a>
+</div>
+</div>
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="hideInheritedProtectedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#callProperty()">callProperty</a>(name:*, ... rest):*</div>
+<div class="summaryTableDescription">
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dataRecordBindingEvent()">dataRecordBindingEvent</a>(eventObj:Object):void</div>
+<div class="summaryTableDescription">
+   A handler for a data binding event thrown by one of the child items.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#doEach()">doEach</a>(iterator:Function):*</div>
+<div class="summaryTableDescription">
+   The doEach() implementation that will be used for all enumerable operations
+   </div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#doSort()">doSort</a>(theItems:Array, compareFunc:Function, fieldName:String = null):int</div>
+<div class="summaryTableDescription">
+   This functions sorts an array of items according to a compare function and an optional
+   fieldName on which to perform the sort.</div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="hideInheritedProtectedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#getProperty()">getProperty</a>(name:*):*</div>
+<div class="summaryTableDescription">
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedProtectedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#hasProperty()">hasProperty</a>(name:*):Boolean</div>
+<div class="summaryTableDescription">
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedProtectedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#nextName()">nextName</a>(index:int):String</div>
+<div class="summaryTableDescription">
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedProtectedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#nextNameIndex()">nextNameIndex</a>(index:int):int</div>
+<div class="summaryTableDescription">
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedProtectedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#nextValue()">nextValue</a>(index:int):*</div>
+<div class="summaryTableDescription">
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="hideInheritedProtectedMethod">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol"><img class="inheritedSummaryImage" title="Inherited" alt="Inherited" src="../../../../images/inheritedSummary.gif"></td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="JSEnumerable.html#setProperty()">setProperty</a>(name:*, value:*):void</div>
+<div class="summaryTableDescription">
+   </div>
+</td><td class="summaryTableOwnerCol"><a href="JSEnumerable.html">JSEnumerable</a></td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#sortCompare()">sortCompare</a>(a:<a href="JSDataRecord.html">JSDataRecord</a>, b:<a href="JSDataRecord.html">JSDataRecord</a>, fieldName:String = null):int</div>
+<div class="summaryTableDescription">
+   The default sort compare function compares two records
+   </div>
+</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<table id="summaryTableEvent" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:DATA_CHANGE">DATA_CHANGE</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+ This Class implements the same events as the flash dataProvider components
+ for the sake of cross compatability.</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:dataChange">dataChange</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">&nbsp;</td><td class="summaryTableOwnerCol">JSDataModel</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="columnNames"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">columnNames</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>columnNames:Array</code>&nbsp;&nbsp;[read-write]<p>
+   An array containing the names of the columns in this Model
+   </p><p>This property can be used as the source for data binding.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get columnNames():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set columnNames(value:Array):void</code>
+<br>
+</div>
+<a name="hasMany"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasMany</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasMany:Array</code>&nbsp;&nbsp;[read-write]<p>
+   An array referencing other Models that this Model has a "has many" relationship
+   to.
+   </p><p>This property can be used as the source for data binding.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get hasMany():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set hasMany(value:Array):void</code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">hasOne</div>
+</div>
+<a name="hasOne"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hasOne</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>hasOne:Array</code>&nbsp;&nbsp;[read-write]<p>
+   An array referencing other Models that this Model has a "has one" relationship
+   to.
+   </p><p>This property can be used as the source for data binding.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get hasOne():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set hasOne(value:Array):void</code>
+<br>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">hasMany</div>
+</div>
+<a name="IDCOUNTER"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">IDCOUNTER</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var IDCOUNTER:uint = 0</code>
+</div>
+<a name="items"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">items</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>items:Array</code>&nbsp;&nbsp;[read-only]<p>
+   (Read Only) An array of all record items in this Model. Same as records property.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get items():Array</code>
+<br>
+</div>
+<a name="itemsList"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">itemsList</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var itemsList:Array</code><p>
+   An Array which stores the list of JSDataRecord instances.
+   </p></div>
+<a name="length"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">length</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>length:int</code>&nbsp;&nbsp;[read-only]<p>
+   (Read Only) The number of record items in this Model
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get length():int</code>
+<br>
+</div>
+<a name="modelName"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">modelName</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>modelName:String</code>&nbsp;&nbsp;[read-write]<p>
+   A String defining the name of this model. When using this model with a server-side
+   gateway (like JSRailsGateway), this name should be the table name that this model represents.
+   </p><p>This property can be used as the source for data binding.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get modelName():String</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set modelName(value:String):void</code>
+<br>
+</div>
+<a name="records"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">records</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>records:Array</code>&nbsp;&nbsp;[read-only]<p>
+   (Read Only) An array of all record items in this Model. Same as items property.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get records():Array</code>
+<br>
+</div>
+<a name="titlesList"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">titlesList</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var titlesList:Array</code><p>
+   An Array which stores the list of titles or column names.
+   </p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="JSDataModel()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">JSDataModel</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function JSDataModel(theNames:Array = null, theItems:Array = null)</code><p>
+   Constructor.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theNames</span>:Array</code> (default = <code>null</code>)<code></code> &mdash; An Array of column names this instance will manage.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theItems</span>:Array</code> (default = <code>null</code>)<code></code> &mdash; An Array of JSDataRecord instances to populate this istance with.
+   </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addColumn()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addColumn</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addColumn(theName:String, theValues:Object):void</code><p>
+   Adds a column to the Model
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theName</span>:String</code> &mdash; A string with the name of the new column
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theValues</span>:Object</code> &mdash; An object with which to populate the new column. Takes the form
+   { id:value, id:value, id:value, ... }
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function addColumnAt(theName:String, theIndex:int, theValues:Object):void<br>function updateColumn(theName:String, theValues:Object):void<br>function removeColumn(theName:String):void<br>function removeColumnAt(theIndex:int):void<br>function getColumn(theName:String):Object<br>function getColumnAt(theIndex:int):Object</div>
+</div>
+<a name="addColumnAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addColumnAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addColumnAt(theName:String, theIndex:int, theValues:Object):void</code><p>
+   Adds a column to the Model at a specific location
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theName</span>:String</code> &mdash; A string with the name of the new column
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theIndex</span>:int</code> &mdash; An interger (zero indexed) that specifies where to add the column
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theValues</span>:Object</code> &mdash; An object with which to populate the new column. Takes the form
+   { id:value, id:value, id:value, ... }
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function addColumn(theName:String, theValues:Object):void<br>function updateColumn(theName:String, theValues:Object):void<br>function removeColumn(theName:String):void<br>function removeColumnAt(theIndex:int):void<br>function getColumn(theName:String):Object<br>function getColumnAt(theIndex:int):Object</div>
+</div>
+<a name="addItem()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addItem</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addItem(theItem:<a href="JSDataRecord.html">JSDataRecord</a>):void</code><p>
+   Adds a new record item to the Model.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theItem</span>:<a href="JSDataRecord.html">JSDataRecord</a></code> &mdash; A JSDataRecord to add
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function addItemAt(theIndex:int, theItem:JSDataRecord):void</div>
+</div>
+<a name="addItemAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addItemAt(theIndex:int, theItem:<a href="JSDataRecord.html">JSDataRecord</a>):void</code><p>
+   Adds a new record item to the Model at a specified index.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theIndex</span>:int</code> &mdash; The index (zero indexed) where the item is to be added
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theItem</span>:<a href="JSDataRecord.html">JSDataRecord</a></code> &mdash; A JSDataRecord to add
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function addItem(theItem:JSDataRecord):void</div>
+</div>
+<a name="dataRecordBindingEvent()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dataRecordBindingEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function dataRecordBindingEvent(eventObj:Object):void</code><p>
+   A handler for a data binding event thrown by one of the child items.
+   this function issues a DataChangeEvent.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">eventObj</span>:Object</code></td>
+</tr>
+</table>
+</div>
+<a name="doEach()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">doEach</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected override function doEach(iterator:Function):*</code><p>
+   The doEach() implementation that will be used for all enumerable operations
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">iterator</span>:Function</code> &mdash; A function that will be called once per iteration with the
+   JSDataRecord as the argument
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>*</code></td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../core/JSEnumerable.html" target="">com.jsjstudios.jumpship.core.JSEnumerable</a>
+</div>
+</div>
+<a name="doSort()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">doSort</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function doSort(theItems:Array, compareFunc:Function, fieldName:String = null):int</code><p>
+   This functions sorts an array of items according to a compare function and an optional
+   fieldName on which to perform the sort.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theItems</span>:Array</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">compareFunc</span>:Function</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">fieldName</span>:String</code> (default = <code>null</code>)<code></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash; the index of the first item in the array that was affected.
+   </td>
+</tr>
+</table>
+</div>
+<a name="editField()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">editField</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function editField(theIndex:int, theFieldName:String, newData:*):void</code><p>
+   Updates an attribute of a record item at the specified index.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theIndex</span>:int</code> &mdash; The index (zero indexed) of the item to be updated
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theFieldName</span>:String</code> &mdash; The attribute (column) name for the field to update
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">newData</span>:*</code> &mdash; The new data for the record attribute
+   </td>
+</tr>
+</table>
+</div>
+<a name="find()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">find</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function find(theMethod:String, theConditions:Object = null, theOptions:Object = null):*</code><p>
+   Serch and sort method for record items.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theMethod</span>:String</code> &mdash; The search method, "all" or "first"
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theConditions</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; An optional object the limits the search to the name-value pairs that are given.
+   theConditions takes the form {name1:value1, name2:value2, ... }. In plain english this conducts a 
+   search where the column "name1" has the value "value1" and the column "name2" has the value "value2"
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theOptions</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; One or more optional string parameters that either limits, offsets, orders the result or
+   includes additionsl JSDataModel's in the search ( These JSDataModel's must first be included in the hasOne or 
+   hasMany preoperties). The format for these are {limit:int}, {offset:int}, {order:String}, {include:JSDataModel}.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>*</code> &mdash; an Array of data records or the data record itself (if just one).
+   </td>
+</tr>
+</table>
+</div>
+<a name="getColumn()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getColumn</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getColumn(theName:String):Object</code><p>
+   Returns the values of a column in the form of an object.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theName</span>:String</code> &mdash; A string with the name of the new column
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; an object containing the column values in the form { id:value, id:value, id:value, ... }
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function addColumn(theName:String, theValues:Object):void<br>function addColumnAt(theName:String, theIndex:int, theValues:Object):void<br>function updateColumn(theName:String, theValues:Object):void<br>function removeColumn(theName:String):void<br>function removeColumnAt(theIndex:int):void<br>function getColumnAt(theIndex:int):Object</div>
+</div>
+<a name="getColumnAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getColumnAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getColumnAt(theIndex:int):Object</code><p>
+   Returns the values of a column in the form of an object.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theIndex</span>:int</code> &mdash; An interger (zero indexed) that specifies which column to return
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; an object containing the column values in the form { id:value, id:value, id:value, ... }
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function addColumn(theName:String, theValues:Object):void<br>function addColumnAt(theName:String, theIndex:int, theValues:Object):void<br>function updateColumn(theName:String, theValues:Object):void<br>function removeColumn(theName:String):void<br>function removeColumnAt(theIndex:int):void<br>function getColumn(theName:String):Object</div>
+</div>
+<a name="getItemAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function getItemAt(theIndex:int, ... args):*</code><p>
+   Returns the data record at a given index.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theIndex</span>:int</code> &mdash; An interger (zero indexed) that specifies which record to return
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code>... <span class="label">args</span></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>*</code> &mdash; A reference to the data record
+   </td>
+</tr>
+</table>
+</div>
+<a name="getItemID()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getItemID</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getItemID(theIndex:int):Object</code><p>
+   Returns the data record id at a given index.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theIndex</span>:int</code> &mdash; An interger (zero indexed) that specifies which record id to return
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; The id of the data record
+   </td>
+</tr>
+</table>
+</div>
+<a name="getItemIndex()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getItemIndex</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getItemIndex(theID:Object):int</code><p>
+   Returns the data record index at a given id.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theID</span>:Object</code> &mdash; The ID of the record whose index will be returned.
+   </td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash; The index of the data record
+   </td>
+</tr>
+</table>
+</div>
+<a name="remove()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">remove</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function remove(theIndex:int):void</code><p>
+   Removes a record item at the specified index.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theIndex</span>:int</code> &mdash; The index (zero indexed) of the item to be removed
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function removeAll():void</div>
+</div>
+<a name="removeAll()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeAll():void</code><p>
+   Removes all record items from the Model.
+   </p><p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function remove(theIndex:int):void</div>
+</div>
+<a name="removeColumn()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeColumn</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeColumn(theName:String):void</code><p>
+    Removes a column.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theName</span>:String</code> &mdash; A string with the name of the new column
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function addColumn(theName:String, theValues:Object):void<br>function addColumnAt(theName:String, theIndex:int, theValues:Object):void<br>function updateColumn(theName:String, theValues:Object):void<br>function removeColumnAt(theIndex:int):void<br>function getColumn(theName:String):Object</div>
+</div>
+<a name="removeColumnAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeColumnAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeColumnAt(theIndex:int):void</code><p>
+   Removes a column at the specified index.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theIndex</span>:int</code> &mdash; An interger (zero indexed) that specifies which column to remove
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function addColumn(theName:String, theValues:Object):void<br>function addColumnAt(theName:String, theIndex:int, theValues:Object):void<br>function updateColumn(theName:String, theValues:Object):void<br>function removeColumn(theName:String):void<br>function getColumn(theName:String):Object<br>function getColumnAt(theIndex:int):Object</div>
+</div>
+<a name="removeItemAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeItemAt(theIndex:int):void</code><p>
+   Alias for the remove() method. Removes a record item at the specified index.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theIndex</span>:int</code> &mdash; The index (zero indexed) of the item to be removed
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function removeAll():void</div>
+</div>
+<a name="replaceItemAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">replaceItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function replaceItemAt(theIndex:int, theItem:<a href="JSDataRecord.html">JSDataRecord</a>):void</code><p>
+   Replaces a record item at the specified index.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theIndex</span>:int</code> &mdash; The index (zero indexed) of the item to be replaced
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theItem</span>:<a href="JSDataRecord.html">JSDataRecord</a></code> &mdash; A JSDataRecord that will replace the old one
+   </td>
+</tr>
+</table>
+</div>
+<a name="setItemAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function setItemAt(theValue:Object, theIndex:int, ... args):*</code><p>
+   Sets the data record at a given index. Same as <code>replaceItemAt()</code> 
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theValue</span>:Object</code> &mdash; A JSDataRecord to set
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theIndex</span>:int</code> &mdash; An interger (zero indexed) that specifies which index to set the record
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code>... <span class="label">args</span></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>*</code></td>
+</tr>
+</table>
+</div>
+<a name="sortCompare()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sortCompare</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function sortCompare(a:<a href="JSDataRecord.html">JSDataRecord</a>, b:<a href="JSDataRecord.html">JSDataRecord</a>, fieldName:String = null):int</code><p>
+   The default sort compare function compares two records
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">a</span>:<a href="JSDataRecord.html">JSDataRecord</a></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">b</span>:<a href="JSDataRecord.html">JSDataRecord</a></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">fieldName</span>:String</code> (default = <code>null</code>)<code></code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code></td>
+</tr>
+</table>
+</div>
+<a name="sortItems()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sortItems</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function sortItems(theCompareFunc:Function = null):void</code><p>
+   Sorts the Records in this model and changes the id's accordingly.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theCompareFunc</span>:Function</code> (default = <code>null</code>)<code></code> &mdash; An optional reference to a compare function.
+   See the Array.sort method in the Flash docs for details. If no functino is given
+    the default is to sort alphabetically by the first column
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function sortItemsBy():void</div>
+</div>
+<a name="sortItemsBy()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sortItemsBy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function sortItemsBy(fieldName:String):void</code><p>
+   Sorts the Records in this model according to a column and changes the id's accordingly.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fieldName</span>:String</code> &mdash; The name of the column to sor by.
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function sortItems():void</div>
+</div>
+<a name="toArray()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toArray</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function toArray():Array</code><p>
+   Returns an Array representation of this object with object representations of the JSDataRecord as values.
+   Uses JSDataRecord.toObject() to convert the records.
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Array</code> &mdash; Returns an Array representation of this object
+   </td>
+</tr>
+</table>
+</div>
+<a name="toObject()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toObject</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toObject():Object</code><p>
+   Returns an Object representation of this object with the JSDataRecord id's as attribute names and 
+   object representations of the JSDataRecord as values. Uses JSDataRecord.toObject() to convert the records
+   to Objects.
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; Returns an Object representation of this object
+   </td>
+</tr>
+</table>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function toString():String</code><p>
+   Returns the a String description of this model.
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash; a String.
+   </td>
+</tr>
+</table>
+</div>
+<a name="toXML()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toXML</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toXML():XML</code><p>
+   Returns the contents of this model in XML form.
+   </p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>XML</code> &mdash; an XML object containing the contents of the model.
+   </td>
+</tr>
+</table>
+</div>
+<a name="update()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">update</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function update(theIndex:int, theAttributes:Object):void</code><p>
+   Updates a record item at the specified index.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theIndex</span>:int</code> &mdash; The index (zero indexed) of the item to be updated
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theAttributes</span>:Object</code> &mdash; The name-value pairs for the updated item. Takes the form 
+   {columnName1:value1, columnName2:value2, ... }
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function updateAll(theAttributes:Object, theConditions:Object)</div>
+</div>
+<a name="updateAll()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">updateAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function updateAll(theAttributes:Object, theConditions:Object):void</code><p>
+   Updates all record items.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theAttributes</span>:Object</code> &mdash; The name-value pairs for the updated item. Takes the form 
+   {columnName1:value1, columnName2:value2, ... }
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theConditions</span>:Object</code> &mdash; The optional conditions that determine which items to update.
+   theConditions takes the form {name1:value1, name2:value2, ... }. In plain english this conducts a 
+   search where the column "name1" has the value "value1" and the column "name2" has the value "value2"
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function updateAll(theAttributes:Object, theConditions:Object)</div>
+</div>
+<a name="updateColumn()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">updateColumn</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function updateColumn(theName:String, theValues:Object):void</code><p>
+   Updates a column with the values provided.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theName</span>:String</code> &mdash; A string with the name of the new column
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theValues</span>:Object</code> &mdash; An object with which to populate the new column. Takes the form
+   { id:value, id:value, id:value, ... }
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">function addColumn(theName:String, theValues:Object):void<br>function addColumnAt(theName:String, theIndex:int, theValues:Object):void<br>function removeColumn(theName:String):void<br>function removeColumnAt(theIndex:int):void<br>function getColumn(theName:String):Object<br>function getColumnAt(theIndex:int):Object</div>
+</div>
+<div class="detailSectionHeader">Event detail</div>
+<a name="event:DATA_CHANGE"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">DATA_CHANGE</td><td class="detailHeaderType">event&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href=""><code>fl.events.DataChangeEvent</code></a>
+<br>
+<p></p><p>
+ This Class implements the same events as the flash dataProvider components
+ for the sake of cross compatability. As a result you mus have the fl.events.DataChangeEvent
+ in you class path to use this class without triggering errors. In an effort to
+ be annoying, Adobe has not included this class in the standard class path but you can add it
+ or include a component into you library which add the class automatically.
+ </p></div>
+<a name="event:dataChange"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dataChange</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href=""><code>fl.events.DataChangeEvent</code></a>
+<br>
+<p></p>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

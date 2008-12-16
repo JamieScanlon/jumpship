@@ -1,0 +1,671 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
+<meta content="JSCommandBase,com.jsjstudios.jumpship.core.JSCommandBase,commandHistory,commands,parameters,resultObject,COMMANDNAME,MAXHISTORY,addCommand,addCommands,afterFilter,beforeFilter,createCommand,execute,executeOperation,init,onResult,onResultOperation,onStatus,onStatusOperation,preCommandInit,processCommandResult,returnCommandResult" name="keywords">
+<title>com.jsjstudios.jumpship.core.JSCommandBase</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'JSCommandBase - API Documentation';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?com/jsjstudios/jumpship/core/JSCommandBase.html&amp;com/jsjstudios/jumpship/core/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;JSCommandBase</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class JSCommandBase"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.jsjstudios.jumpship.core</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class JSCommandBase</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Implements</td><td><a href="../interfaces/ICommand.html">ICommand</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Subclasses</td><td><a href="../examples/Command.html">Command</a></td>
+</tr>
+</table>
+<p></p>
+  <code>Command</code> Base Class. In this framework commands have the ability to cascade or
+  call other commands. Therefore this base class contains a lot of the same
+  methods as the Controller base class. But whereas the Controller MUST implement
+  primitive command functions, commands are not required to.
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#COMMANDNAME">COMMANDNAME</a> : String<div class="summaryTableDescription">[read-only]
+   Pseudo Constant: The Name Of thie Command.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#MAXHISTORY">MAXHISTORY</a> : uint<div class="summaryTableDescription">[read-only]
+   Pseudo Constant: Determines the maximum number of commands this command will remember
+   in it's history.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#commandHistory">commandHistory</a> : Array<div class="summaryTableDescription">
+   history of commands
+   </div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#commands">commands</a> : Object<div class="summaryTableDescription">
+   holds named list of commands
+   </div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#parameters">parameters</a> : Object<div class="summaryTableDescription">
+   The parameters passed in to the command
+   </div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#resultObject">resultObject</a> : Object<div class="summaryTableDescription"> 
+   The returned result of the command
+   </div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#JSCommandBase()">JSCommandBase</a>()</div>
+<div class="summaryTableDescription">
+   Constructor
+   </div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#execute()">execute</a>(params:Object = null, returnFunc:Function = null, token:Object = null):void</div>
+<div class="summaryTableDescription">
+   Executes the <code>JSCommandBase</code>.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#executeOperation()">executeOperation</a>():void</div>
+<div class="summaryTableDescription">
+   The main execution block for a <code>JSCommandBase</code>.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#onResult()">onResult</a>(resultObj:Object = null):void</div>
+<div class="summaryTableDescription">
+   Process the <code>JSCommandBase</code> result.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#onResultOperation()">onResultOperation</a>(theResult:Object = null):void</div>
+<div class="summaryTableDescription">
+   The main result processing block for a <code>JSCommandBase</code>.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#onStatus()">onStatus</a>(statusObj:Object = null):void</div>
+<div class="summaryTableDescription">
+   Process the <code>JSCommandBase</code> status.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#onStatusOperation()">onStatusOperation</a>(theStatus:Object = null):void</div>
+<div class="summaryTableDescription">
+   An optional status handler <code>JSCommandBase</code>.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#returnCommandResult()">returnCommandResult</a>(theResultObject:Object):void</div>
+<div class="summaryTableDescription">
+   Processes the result of a <code>JSCommandBase</code> instance.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+</table>
+</div>
+<a name="protectedMethodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Methods</div>
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addCommand()">addCommand</a>(commandName:String, commandRef:Class):void</div>
+<div class="summaryTableDescription">
+   A method for adding child Commands.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addCommands()">addCommands</a>():void</div>
+<div class="summaryTableDescription">
+   A method that is called to add child Commands that this Command can call in the
+   course of its duty's.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#afterFilter()">afterFilter</a>(theCommandName:String):void</div>
+<div class="summaryTableDescription">
+   A method that is called after any Command is called.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#beforeFilter()">beforeFilter</a>(theCommandName:String):void</div>
+<div class="summaryTableDescription">
+   A method that is called before any child Command is called.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#createCommand()">createCommand</a>(theNotification:String, theParams:Object):void</div>
+<div class="summaryTableDescription">
+   A method for creating and executing a child Commands.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#init()">init</a>():void</div>
+<div class="summaryTableDescription">
+   A method that is called after any Commands have been initialized.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#preCommandInit()">preCommandInit</a>():void</div>
+<div class="summaryTableDescription">
+   A method that is called before any Commands have been initialized
+   </div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#processCommandResult()">processCommandResult</a>(theResultObject:Object):void</div>
+<div class="summaryTableDescription">
+   A method that child Commands use to return their results to this Command.</div>
+</td><td class="summaryTableOwnerCol">JSCommandBase</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="commandHistory"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">commandHistory</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var commandHistory:Array</code><p>
+   history of commands
+   </p></div>
+<a name="COMMANDNAME"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">COMMANDNAME</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>COMMANDNAME:String</code>&nbsp;&nbsp;[read-only]<p>
+   Pseudo Constant: The Name Of thie Command. This constant should be overwritten by 
+   extending classes.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get COMMANDNAME():String</code>
+<br>
+</div>
+<a name="commands"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">commands</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var commands:Object</code><p>
+   holds named list of commands
+   </p></div>
+<a name="MAXHISTORY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">MAXHISTORY</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>MAXHISTORY:uint</code>&nbsp;&nbsp;[read-only]<p>
+   Pseudo Constant: Determines the maximum number of commands this command will remember
+   in it's history.
+   </p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get MAXHISTORY():uint</code>
+<br>
+</div>
+<a name="parameters"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">parameters</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var parameters:Object</code><p>
+   The parameters passed in to the command
+   </p></div>
+<a name="resultObject"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">resultObject</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var resultObject:Object</code><p> 
+   The returned result of the command
+   </p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="JSCommandBase()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">JSCommandBase</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function JSCommandBase()</code><p>
+   Constructor
+   </p></div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addCommand()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addCommand</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function addCommand(commandName:String, commandRef:Class):void</code><p>
+   A method for adding child Commands.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">commandName</span>:String</code> &mdash; The name of the Command.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">commandRef</span>:Class</code> &mdash; A reference to the Command Class.
+   </td>
+</tr>
+</table>
+</div>
+<a name="addCommands()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addCommands</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function addCommands():void</code><p>
+   A method that is called to add child Commands that this Command can call in the
+   course of its duty's. The format for adding a Command should be as follows:
+   </p><p>
+   <code>addCommand ( "getPersonListCommand", GetPersonListCommand );</code>
+   <p>
+   "getPersonListCommand" is the name of the command that will returned with the
+   result of the child Command.
+   </div>
+<a name="afterFilter()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">afterFilter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function afterFilter(theCommandName:String):void</code><p>
+   A method that is called after any Command is called.
+   This method can be overriden to perform post-commnd filtering logic.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theCommandName</span>:String</code> &mdash; The name of the command that has just finished executing.
+   </td>
+</tr>
+</table>
+</div>
+<a name="beforeFilter()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">beforeFilter</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function beforeFilter(theCommandName:String):void</code><p>
+   A method that is called before any child Command is called.
+   This method can be overriden to perform pre-commnad filtering logic.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theCommandName</span>:String</code> &mdash; The name of the command that will be called 
+   directly after this method ends.
+   </td>
+</tr>
+</table>
+</div>
+<a name="createCommand()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">createCommand</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function createCommand(theNotification:String, theParams:Object):void</code><p>
+   A method for creating and executing a child Commands.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theNotification</span>:String</code> &mdash; The name of the Command as given in <code>addCommand()</code>.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">theParams</span>:Object</code> &mdash; An object that will be passed to the Command that can contain parameters.
+   </td>
+</tr>
+</table>
+</div>
+<a name="execute()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">execute</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function execute(params:Object = null, returnFunc:Function = null, token:Object = null):void</code><p>
+   Executes the <code>JSCommandBase</code>. 
+   </p><p>
+   This implementation of <code>ICommand</code> is purposefully strict, requiring the <code>returnFunc</code>
+   and <code>params</code> arguments to be present. This method is final and calls the onExecuteOperation() method 
+   to carry out the main functionality.
+   
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">params</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; an <code>Object</code> containing variables this Command may use to carry out it's task.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">returnFunc</span>:Function</code> (default = <code>null</code>)<code></code> &mdash; an <code>Function</code> that get's called once the Command has completed.
+   </td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">token</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; an optional <code>Object</code> passed back through the argument of the <code>returnFunc</code>.
+   </td>
+</tr>
+</table>
+<br>
+<span class="label">Throws</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code></code> &mdash; If either <code>params</code> or <code>returnFunc</code> is null.
+   </td>
+</tr>
+</table>
+<p>
+<span class="label">See also</span>
+</p>
+<div class="seeAlso">
+<a href="../interfaces/package-detail.html" target="">ICommand</a>
+<br>function executeOperation ()</div>
+</div>
+<a name="executeOperation()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">executeOperation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function executeOperation():void</code><p>
+   The main execution block for a <code>JSCommandBase</code>.
+   </p><p>
+   This primitive method is called by the execute() method. After doing it's work
+   (asynchonously or not), the <code>onResultOperation()</code> method must get called
+   with the result of the operation (even if null). Doing so completes the loop of
+   creating a command and returning a result and since commands are logged in JumpShip,
+   it ensures this command does not stay in memory after it has completed it's task.
+   </div>
+<a name="init()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">init</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function init():void</code><p>
+   A method that is called after any Commands have been initialized.
+   This method should be overriden to perform basic class initialization.
+   </p></div>
+<a name="onResult()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onResult</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function onResult(resultObj:Object = null):void</code><p>
+   Process the <code>JSCommandBase</code> result.
+   </p><p>
+   This handler packages the resultObj into a wrapper Object in the form 
+   {type:COMMANDNAME, result:resultObj, id:token} (where token is the <code>token</code> that
+   was passed into the <code>execute()</code> function), and sends the result to the <code>returnFunc</code>.
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">resultObj</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; An Object containing the event parameters.
+   </td>
+</tr>
+</table>
+</div>
+<a name="onResultOperation()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onResultOperation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function onResultOperation(theResult:Object = null):void</code><p>
+   The main result processing block for a <code>JSCommandBase</code>.
+   </p><p>
+   This method must be called when this command has completed it's operations. It must 
+   also call <code>onResult(theResult)</code> to notify the owner that this command has completed.
+   
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theResult</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; an <code>Object</code> containing the result of the operation (if any).
+   </td>
+</tr>
+</table>
+</div>
+<a name="onStatus()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onStatus</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function onStatus(statusObj:Object = null):void</code><p>
+   Process the <code>JSCommandBase</code> status.
+   </p><p>
+   It is anticipated that Commands may call services, in which case this is the
+   event handler for a Status message. This handler calls the onStatusOperation() Hook Function.
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">statusObj</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; An Object comtaning the event parameters.
+   </td>
+</tr>
+</table>
+</div>
+<a name="onStatusOperation()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">onStatusOperation</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function onStatusOperation(theStatus:Object = null):void</code><p>
+   An optional status handler <code>JSCommandBase</code>.
+   </p><p>
+   This method can be implemented by extending classes and gets called by the <code>onStatus()</code>
+   event handler.
+   
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theStatus</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; an <code>Object</code> containing the status of the operation (if any).
+   </td>
+</tr>
+</table>
+</div>
+<a name="preCommandInit()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">preCommandInit</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function preCommandInit():void</code><p>
+   A method that is called before any Commands have been initialized
+   </p></div>
+<a name="processCommandResult()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">processCommandResult</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function processCommandResult(theResultObject:Object):void</code><p>
+   A method that child Commands use to return their results to this Command.
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theResultObject</span>:Object</code> &mdash; An object containing the result of the child Command.
+   This object will be in the form:<br>
+   <code>theResultObject.type : String</code> - the name of the command returning the result<br>
+   <code>theResultObject.result : Object</code> - the result object.<br>
+   </td>
+</tr>
+</table>
+</div>
+<a name="returnCommandResult()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">returnCommandResult</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public final function returnCommandResult(theResultObject:Object):void</code><p>
+   Processes the result of a <code>JSCommandBase</code> instance. 
+   </p><p>
+   This is the default <code>returnFunc</code> given to a new <code>JSCommandBase</code>.
+   This method calls the afterFilter() hook method. This method then calls the 
+   processCommandResult primitive method with the result.
+   <span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theResultObject</span>:Object</code> &mdash; An object containing the result information from the command.
+   </td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

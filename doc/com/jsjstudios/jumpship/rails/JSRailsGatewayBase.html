@@ -1,0 +1,539 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="../../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../../print.css" type="text/css" media="print">
+<meta content="JSRailsGatewayBase,com.jsjstudios.jumpship.rails.JSRailsGatewayBase,messageXML,modelColumnNames,resultModel,resultParams,xmlLoader,xmlURL,baseURL,enableMessaging,model,service,dataDelete,dataRequest,dataSubmit,dataUpdate" name="keywords">
+<title>com.jsjstudios.jumpship.rails.JSRailsGatewayBase</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'JSRailsGatewayBase - API Documentation';
+				var baseRef = '../../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../all-classes.html')" href="../../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../../index-list.html')" href="../../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../../index.html?com/jsjstudios/jumpship/rails/JSRailsGatewayBase.html&amp;com/jsjstudios/jumpship/rails/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;JSRailsGatewayBase</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class JSRailsGatewayBase"); titleBar_setSubNav(false,true,false,false,true,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">com.jsjstudios.jumpship.rails</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class JSRailsGatewayBase</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">JSRailsGatewayBase <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../../images/inherit-arrow.gif"> flash.events.EventDispatcher</td>
+</tr>
+</table>
+<p></p> 
+  JumpShip Rails Gateway Base Class. This class is the base class for a standard implementation
+  of a Flash / Ruby on Rails gateway. This class communicates with a RESTful Rails controller.
+  A RESTful Rails Controller maps URL's and request methods (GET, POST, DELETE, PUT) into methods
+  such as index, show, create, update, destroy. This class provides the basic Create Read Update Delete 
+  (CRUD) operations for communicating with a Ruby on Rails backend.
+  This Class traslates server-side data into JSDataModel Objects.
+  <p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#baseURL">baseURL</a> : String<div class="summaryTableDescription">
+   A String containing the base URL of the Rails application.</div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enableMessaging">enableMessaging</a> : Boolean<div class="summaryTableDescription">
+   A Boolean indicating whether this gateway treats XML it recieves with a root node named
+   'message' ( <message>...</message> ) as a message rather than data.</div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#model">model</a> : <a href="../core/JSDataModel.html">JSDataModel</a>
+<div class="summaryTableDescription">
+   A JSDataMode that's linked to this gateway.</div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#service">service</a> : Object<div class="summaryTableDescription">
+  A service object that is used to determine the base path of the server 
+  </div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#messageXML">messageXML</a> : XML<div class="summaryTableDescription">
+  The raw XML message that is returned from the server 
+  </div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#modelColumnNames">modelColumnNames</a> : Array<div class="summaryTableDescription">
+  An array of column names that are to be used with any data that
+  is returned from the server.</div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#resultModel">resultModel</a> : <a href="../core/JSDataModel.html">JSDataModel</a>
+<div class="summaryTableDescription">
+  A JSDataModel that contains data returned from the server.</div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#resultParams">resultParams</a> : Object<div class="summaryTableDescription">
+  An Object of parameters retuned from a server message
+  </div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#xmlLoader">xmlLoader</a> : URLLoader<div class="summaryTableDescription">
+  The URLLoader instance used for communication with the server 
+  </div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#xmlURL">xmlURL</a> : URLRequest<div class="summaryTableDescription">
+  The URLRequest instance used for communication with the server
+  </div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#JSRailsGatewayBase()">JSRailsGatewayBase</a>(theService:Object)</div>
+<div class="summaryTableDescription">
+  Constructor 
+  </div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dataDelete()">dataDelete</a>(theParams:Object = null):void</div>
+<div class="summaryTableDescription">
+   Deletes a record from the Rails model
+   The model to interact with is determined by the <code>model.modelName</code> property.</div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dataRequest()">dataRequest</a>(theParams:Object = null):void</div>
+<div class="summaryTableDescription">
+   Requests data from the Rails model
+   The model to interact with is determined by the <code>model.modelName</code> property.</div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dataSubmit()">dataSubmit</a>(theParams:Object = null):void</div>
+<div class="summaryTableDescription">
+   Sends data to the Rails model
+   The model to interact with is determined by the <code>model.modelName</code> property.</div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dataUpdate()">dataUpdate</a>(theParams:Object = null):void</div>
+<div class="summaryTableDescription">
+   Updates a record in the Rails model
+   The model to interact with is determined by the <code>model.modelName</code> property.</div>
+</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+</table>
+</div>
+<a name="eventSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Events</div>
+<table id="summaryTableEvent" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Event</th><th>Summary</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:dataReceived">dataReceived</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+         Defines the value of the <code>type</code> property of a <code>dataReceived</code>
+   event object.</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#event:messageReceived">messageReceived</a>
+</div>
+</td><td class="summaryTableDescription summaryTableCol">
+         Defines the value of the <code>type</code> property of a <code>messageReceived</code>
+   event object.</td><td class="summaryTableOwnerCol">JSRailsGatewayBase</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="baseURL"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">baseURL</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>baseURL:String</code>&nbsp;&nbsp;[read-write]<p>
+   A String containing the base URL of the Rails application.
+   </p><p>This property can be used as the source for data binding.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get baseURL():String</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set baseURL(value:String):void</code>
+<br>
+</div>
+<a name="enableMessaging"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enableMessaging</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>enableMessaging:Boolean</code>&nbsp;&nbsp;[read-write]<p>
+   A Boolean indicating whether this gateway treats XML it recieves with a root node named
+   'message' ( <message>...</message> ) as a message rather than data. Messages trigger a
+   <code>RailsGatewayEvent.MESSAGE_RECEIVED</code> event and the contents of the XML is
+   placed in an <code>Object</code> rather than a <code>JSDataModel</code>. Messaging can
+   be dissabled on the occasion where you might have a Rails model called 'message' and
+   you would like the contents of the model to be treated as normal data. This property is
+   set to true by default.
+   </p><p>This property can be used as the source for data binding.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get enableMessaging():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set enableMessaging(value:Boolean):void</code>
+<br>
+</div>
+<a name="messageXML"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">messageXML</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var messageXML:XML</code><p>
+  The raw XML message that is returned from the server 
+  </p></div>
+<a name="model"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">model</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>model:<a href="../core/JSDataModel.html">JSDataModel</a></code>&nbsp;&nbsp;[read-write]<p>
+   A JSDataMode that's linked to this gateway. This property is particularly important
+   in determining which Rails model to talk to on the server. <code>model.modelName</code>
+   needs to have the same name as the Rails model it is communicating with.
+   The <code>model.modelName</code> should always be in the singular and should be lower case.
+   </p><p>This property can be used as the source for data binding.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get model():<a href="../core/JSDataModel.html">JSDataModel</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set model(value:<a href="../core/JSDataModel.html">JSDataModel</a>):void</code>
+<br>
+</div>
+<a name="modelColumnNames"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">modelColumnNames</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var modelColumnNames:Array</code><p>
+  An array of column names that are to be used with any data that
+  is returned from the server.
+  </p></div>
+<a name="resultModel"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">resultModel</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var resultModel:<a href="../core/JSDataModel.html">JSDataModel</a></code><p>
+  A JSDataModel that contains data returned from the server.
+  </p></div>
+<a name="resultParams"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">resultParams</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var resultParams:Object</code><p>
+  An Object of parameters retuned from a server message
+  </p></div>
+<a name="service"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">service</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>service:Object</code>&nbsp;&nbsp;[read-write]<p>
+  A service object that is used to determine the base path of the server 
+  </p><p>This property can be used as the source for data binding.</p>
+<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get service():Object</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set service(value:Object):void</code>
+<br>
+</div>
+<a name="xmlLoader"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">xmlLoader</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var xmlLoader:URLLoader</code><p>
+  The URLLoader instance used for communication with the server 
+  </p></div>
+<a name="xmlURL"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">xmlURL</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var xmlURL:URLRequest</code><p>
+  The URLRequest instance used for communication with the server
+  </p></div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="JSRailsGatewayBase()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">JSRailsGatewayBase</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function JSRailsGatewayBase(theService:Object)</code><p>
+  Constructor 
+  </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theService</span>:Object</code> &mdash; An Object that supplies the base url for all service calls. 
+  The base url is retrieved by calling <code>toString()</code> on theService.
+  </td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="dataDelete()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dataDelete</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function dataDelete(theParams:Object = null):void</code><p>
+   Deletes a record from the Rails model
+   The model to interact with is determined by the <code>model.modelName</code> property.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theParams</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; An optional <code>Object</code> where <code>theParams.record</code> contains
+   the record to delete. While <code>theParams</code> is optional, this method doesn't do
+   anything unless it is defined. The reason for the object to be optional is because this method
+   will most likely be overridden in subclasses to perform according to a specific service
+   architecture and is intended to be very flexible to accommodate this.
+   </td>
+</tr>
+</table>
+</div>
+<a name="dataRequest()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dataRequest</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function dataRequest(theParams:Object = null):void</code><p>
+   Requests data from the Rails model
+   The model to interact with is determined by the <code>model.modelName</code> property.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theParams</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; An optional <code>Object</code> that defines parameters for retrieving
+   data. <code>theParams.method</code> can be set to "list" or "show". "list" returns all
+   records in the database while "show" selects one. <code>theParams.method</code> defaults
+   to "list". <code>theParams.id</code> is used with the "show" method to determine what
+   record to return. <code>theParams.id</code> defaults to 1.
+   </td>
+</tr>
+</table>
+</div>
+<a name="dataSubmit()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dataSubmit</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function dataSubmit(theParams:Object = null):void</code><p>
+   Sends data to the Rails model
+   The model to interact with is determined by the <code>model.modelName</code> property.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theParams</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; An optional <code>Object</code> where <code>theParams.record</code> contains
+   the new record to save. While <code>theParams</code> is optional, this method doesn't do
+   anything unless it is defined. The reason for the object to be optional is because this method
+   will most likely be overridden in subclasses to perform according to a specific service
+   architecture and is intended to be very flexible to accommodate this.
+   </td>
+</tr>
+</table>
+</div>
+<a name="dataUpdate()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dataUpdate</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function dataUpdate(theParams:Object = null):void</code><p>
+   Updates a record in the Rails model
+   The model to interact with is determined by the <code>model.modelName</code> property.
+   
+   </p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">theParams</span>:Object</code> (default = <code>null</code>)<code></code> &mdash; An optional <code>Object</code> where <code>theParams.record</code> contains
+   the record to update. While <code>theParams</code> is optional, this method doesn't do
+   anything unless it is defined. The reason for the object to be optional is because this method
+   will most likely be overridden in subclasses to perform according to a specific service
+   architecture and is intended to be very flexible to accommodate this.
+   </td>
+</tr>
+</table>
+</div>
+<div class="detailSectionHeader">Event detail</div>
+<a name="event:dataReceived"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dataReceived</td><td class="detailHeaderType">event&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="events/RailsGatewayEvent.html"><code>com.jsjstudios.jumpship.rails.events.RailsGatewayEvent</code></a>
+<br>
+<span class="label">RailsGatewayEvent.type property = </span><a href="events/RailsGatewayEvent.html#DATA_RECEIVED"><code>com.jsjstudios.jumpship.rails.events.RailsGatewayEvent.DATA_RECEIVED</code></a>
+<br><p>
+         Defines the value of the <code>type</code> property of a <code>dataReceived</code>
+   event object. 
+      </p><p>This event has the following properties:</p>
+    <table class="innertable" width="100%">
+       <tr><th>Property</th><th>Value</th></tr>
+       <tr><td><code>bubbles</code></td><td><code>false</code></td></tr>
+       <tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr>
+       <tr><td><code>type</code></td><td>Identifies the type of change that was made.</td></tr>
+      <tr><td><code>currentTarget</code></td><td>The object that is actively processing 
+      the event object with an event listener.</td></tr>
+       <tr><td><code>gateway</code></td><td>Identifies the gateway class that received the data.</td></tr>
+       <tr><td><code>data</code></td><td>The data received.</td></tr>
+          <tr><td><code>target</code></td><td>The object that dispatched the event. The target is 
+                   not always the object listening for the event. Use the <code>currentTarget</code>
+      property to access the object that is listening for the event.</td></tr>
+    </table>
+                  </div>
+<a name="event:messageReceived"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">messageReceived</td><td class="detailHeaderType">event&nbsp;</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<span class="label">Event object type: </span><a href="events/RailsGatewayEvent.html"><code>com.jsjstudios.jumpship.rails.events.RailsGatewayEvent</code></a>
+<br>
+<span class="label">RailsGatewayEvent.type property = </span><a href="events/RailsGatewayEvent.html#MESSAGE_RECEIVED"><code>com.jsjstudios.jumpship.rails.events.RailsGatewayEvent.MESSAGE_RECEIVED</code></a>
+<br><p>
+         Defines the value of the <code>type</code> property of a <code>messageReceived</code>
+   event object. 
+      </p><p>This event has the following properties:</p>
+    <table class="innertable" width="100%">
+       <tr><th>Property</th><th>Value</th></tr>
+       <tr><td><code>bubbles</code></td><td><code>false</code></td></tr>
+       <tr><td><code>cancelable</code></td><td><code>false</code>; there is no default behavior to cancel.</td></tr>
+       <tr><td><code>type</code></td><td>Identifies the type of change that was made.</td></tr>
+      <tr><td><code>currentTarget</code></td><td>The object that is actively processing 
+      the event object with an event listener.</td></tr>
+       <tr><td><code>gateway</code></td><td>Identifies the gateway class that received the message.</td></tr>
+       <tr><td><code>data</code></td><td>The parameters of the message received.</td></tr>
+          <tr><td><code>target</code></td><td>The object that dispatched the event. The target is 
+                   not always the object listening for the event. Use the <code>currentTarget</code>
+      property to access the object that is listening for the event.</td></tr>
+    </table>
+                  </div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
