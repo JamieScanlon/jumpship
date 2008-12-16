@@ -2,11 +2,10 @@
 
 JumpShip Framework
 An MVC Based ActionScript with the following features:
-  * A Ruby on Rails like Data Model
-  * A [[http://en.wikipedia.org/wiki/Command_pattern |Command Pattern]] Based Controller (similar to ARP and Cairngorm)
-  * A standardized View with asset loading tools.
+  * A Standardized Data Model
+  * A [http://en.wikipedia.org/wiki/Command_pattern Command Pattern] Based Controller
+  * A standardized View Mediator with asset loading tools.
   * Model / View Data Binding
-  * A Model that is compatible with Flash and Flex Components.
   * Controller Before / After filtering
   * Controller Command Cascading (the ability for commands to call other commands).
 
