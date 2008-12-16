@@ -1,11 +1,7 @@
 = JumpShip Docs =
 
-**These docs are for the AS3 version of JumpShip but the principles still apply to the AS2 version. Only the syntax must be changed.**
 
-
-
-
-Last Updated: March 2, 2008
+Last Updated: December 12, 2008
 
 
 == Using JumpShip with Ruby on Rails==
@@ -64,8 +60,6 @@ The JumpShip Framework core contains three more classes that help formalize a ba
 The JSApplicationState class helps track the state (past and present) of the application. As mentioned above, the Commands should ideally upadate the ''JSApplicationState''. The Controller may also use the ''JSApplicationState'' to check the validity of certain events to make sure they make sense in the context of the current state of the application.
 
 The ''JSApplicationState'' keeps a history of all states and could be used to help 'undo' a sequence of events. Further, the ''JSApplicationState'' has the ability to log a pending state change to keep track of a state that may be in transition. After the requirements have been met, the ''JSApplicationState'' would then commit the pending state---making the pending state now the present state.
-
-The JumpShip Core contains a copy of the ''JSServicesBase'' class that provides basic service registry and retrieval functions. 
 
 Finally the ''JSRuntimeEnvironment'' class is used to keep track the environment the application is running, whether it be in a development mode, testing mode, or in production. Often it is the case that certain settings or Service calls must be different if you are testing the application rather than deploying the final version. This class provides a single place to determine the environment so that you application can react differently depending on what mode ''JSRuntineEnvironment'' says the application is in. This avoids the common practice of having to change settings and republish the code every time you want to change environments. The using the ''JSRuntimeEnvironment'' class you can simply change the environment by using an external XML file loacted at config/environment.xml.
 
@@ -272,7 +266,7 @@ The View has two other hook functions, ''preAssetInit()'', and ''init()''. Simil
 
 The JumpShip Model really represents the core of the framework. As mentioned above the ''JSDataModel'' is best thought of as a table where the rows are ''JSDataRecord'' Objects. The true flexibility of the ''JSDataModel'' comes from the ''JSDataRecord''.
 
-The ''JSDataRecord'' is meant to behave like any Object but it actually allows much greater control. The JSDataRecord is a dynamic class (where properties, functions, etc. can be added outside of the class definition). Attributes (properties) can also be added by using the ''addAttribute()'' method. But when you add an attribute to a ''JSDataRecord'', it actually adds that attribute as an internal private attribute and creates Getter and Setter methods for it. By doing this, the ''JSDataRecord'' is able to call hook functions ''getFunction()'' and ''setFunction()'' each time an attribute is changed or accessed. This is the way data binding is implemented.
+The ''JSDataRecord'' is meant to behave like any Object but it actually allows much greater control. The JSDataRecord is a dynamic class (where properties, functions, etc. can be added outside of the class definition). Attributes (properties) can also be added by using the ''addAttribute()'' method. But when you add an attribute to a ''JSDataRecord'', it actually adds that attribute as an internal private attribute and creates Getter and Setter methods for it. By doing this, the ''JSDataRecord'' is able to call hook functions ''getFunction()'' and ''setFunction()'' each time an attribute is changed or accessed. This is the way data binding is implemented. As of JumpShip version 4, the JSDataRecord also recognizes when it's attributes are themselves JSDataRecord instances and is able to listen for and respond to data binding events from these objects.
 
 Advanced users can extend the ''JSDataRecord'' class, defining the ''getFunction()'' and ''setFunction()'' hook functions to perform an action each time an attribute is read or saved. For instance a Record class can be written to, read from, and saved to a server-side back end.
 
