@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" applicationComplete="onApplicationComplete()">
+
+	<mx:Script>
+		<![CDATA[
+			import com.jsjstudios.jumpship.core.events.DataRecordBindingEvent;
+			
+			import com.jsjstudios.jumpship.core.*;
+			import com.jsjstudios.jumpship.examples.*;
+			import com.jsjstudios.jumpship.rails.JSRailsGatewayBase;
+			import com.jsjstudios.jumpship.rails.events.*;
+			
+			import mx.events.DataGridEvent;
+			import mx.controls.Alert;
+			import mx.events.*;
+			
+			public var dp:JSDataModel;
+			public var gateway:JSRailsGatewayBase;
+			
+			public function onApplicationComplete():void {
+				
+				// Create a Data Model
+				dp = new JSDataModel();
+				
+				// Name it the same as the Rails model on the server
+				dp.modelName = "user"
+				
+				// Create a new Gateway
+				gateway = new JSRailsGatewayBase("http://localhost:3000");
+				
+				
+				// Associate the Gateway with it's Data Model
+				gateway.model = dp;
+				
+				// Set up listeners
+				gateway.addEventListener(RailsGatewayEvent.DATA_RECEIVED, handleData);
+				
+				// Request all of the data
+				gateway.dataRequest();
+				
+			}
+			
+			public function handleData(event:RailsGatewayEvent):void {
+				
+				// Save the data and update the DataGrid.
+				dp = event.data;
+				myGrid.dataProvider = dp.toArray();
+				
+			}
+			
+			public function handleNew(event:MouseEvent):void {
+				
+				// Create a new record that contains the new info
+				var newRecord:JSDataRecord = new JSDataRecord();
+				newRecord.create({firstname:fname.text, lastname:lname.text, phone:phone.text, city:city.text, street:street.text, zip:zip.text});
+				
+				// Send it through the gateway
+				gateway.dataSubmit( {record:newRecord} );
+				
+			}
+			
+			public function handleUpdate(event:MouseEvent):void {
+				
+				if (myGrid.selectedItem == null) return;
+				
+				// Create a new record that contains the updated info
+				var updateRecord:JSDataRecord = new JSDataRecord();
+				
+				var tempObj:Object = myGrid.selectedItem;
+				
+				// Flex adds this internal variable that shouldn't be sent
+				delete tempObj.mx_internal_uid;
+				
+				// Also delete these fields that are maintained by Rails
+				delete tempObj["updated-at"];
+				delete tempObj["created-at"];
+				
+				// Only send the fields that contain data
+				if (fname.text != "") {
+					tempObj.firstname = fname.text;
+				}
+				
+				if (lname.text != "") {
+					tempObj.lastname = lname.text;
+				}
+				
+				if (phone.text != "") {
+					tempObj.phone = phone.text;
+				}
+				
+				if (street.text != "") {
+					tempObj.street = street.text;
+				}
+				
+				if (city.text != "") {
+					tempObj.city = city.text;
+				}
+				
+				if (zip.text != "") {
+					tempObj.zip = zip.text;
+				}
+				
+				// Populate the new record
+				updateRecord.create(tempObj);
+				
+				// Send it through the gateway
+				gateway.dataUpdate( {record:updateRecord} );
+				
+			}
+			
+			public function handleDelete(event:MouseEvent):void {
+				
+				if (myGrid.selectedItem == null) return;
+				
+				// Find the record to delete matching the 'id'
+				var deleteRecord:JSDataRecord = dp.find("first", {id:myGrid.selectedItem.id});
+				
+				// Send the record to delete to the Gateway
+				gateway.dataDelete( {record:deleteRecord} );
+				
+			}
+			
+			public function handleList(event:MouseEvent):void {
+				
+				// Request all of the data
+				gateway.dataRequest();
+				
+			}
+
+		]]>
+	</mx:Script>
+	
+	<mx:VBox>
+	<mx:HBox>
+		<mx:DataGrid id="myGrid"/>
+	</mx:HBox>
+	<mx:Form id="myForm">
+		<mx:FormItem label="First name">
+            <mx:TextInput id="fname" width="200"/>
+        </mx:FormItem>
+        <mx:FormItem label="Last name">
+            <mx:TextInput id="lname" width="200"/>
+        </mx:FormItem>
+        <mx:FormItem label="Phone">
+            <mx:TextInput id="phone" width="200"/>
+        </mx:FormItem>
+        <mx:FormItem label="Street">
+            <mx:TextInput id="street" width="200"/>
+        </mx:FormItem>
+        <mx:FormItem label="City">
+            <mx:TextInput id="city" width="200"/>
+        </mx:FormItem>
+        <mx:FormItem label="Zip">
+            <mx:TextInput id="zip" width="200"/>
+        </mx:FormItem>
+	</mx:Form>
+	<mx:HBox>
+		<mx:Button label="New" click="handleNew(event)"/>
+		<mx:Button label="Update" click="handleUpdate(event)"/>
+		<mx:Button label="Delete" click="handleDelete(event)"/>
+		<mx:Button label="List" click="handleList(event)"/>
+	</mx:HBox>
+	</mx:VBox>
+	
+</mx:Application>
